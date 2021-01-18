@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app/scss/style.css">
-    <!-- CSS note the /dist/style might not work, chagne to project root after it compiles -->
+    <!-- CSS note the /dist/style might not work, change to project root after it compiles -->
     <title>Frontend Mentor | Easybank landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,13 +27,13 @@
 <body>
 
 <header class="header">
-    <div class="overlay"></div>
+    <div class="overlay has-fade"></div>
     <nav class="flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
             <img src="images/logo.svg" alt="EasyBank">
         </a>
 
-        <a href="#" id="btnHamburger" class="header__menu hide-for-desktop">
+        <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
             <span></span>
             <span></span>
             <span></span>
@@ -46,6 +46,12 @@
         </div>
         <a href="#" class="button header__cta hide-for-mobile">Request Invite</a>
     </nav>
+    <div class="header__menu has-fade">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+    </div>
 </header>
 
 
