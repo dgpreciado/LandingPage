@@ -199,4 +199,12 @@ button, .button {
   opacity: 0.75;
 }
 
+.hero__image {
+  background-image: url("/../LandingPage/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
