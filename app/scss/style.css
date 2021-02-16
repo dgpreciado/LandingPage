@@ -56,6 +56,11 @@ body {
   color: #9698a6;
   font-weight: 300;
 }
+@media (min-width: 64em) {
+  body {
+    font-size: 1.125rem;
+  }
+}
 body.noscroll {
   overflow: hidden;
 }
@@ -69,10 +74,34 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+.container--pall {
   padding-top: 2.25rem;
-  padding-left: 1.5rem;
   padding-bottom: 2.25rem;
   padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.container--px {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--pt {
+  padding-top: 2.25rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+.container--pl {
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -203,15 +232,48 @@ button:hover, .button:hover {
   opacity: 1;
 }
 
+.hero {
+  background-color: #fafafa;
+}
+@media (min-width: 64em) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+}
 .hero__image {
   position: relative;
-  background-image: url("/../LandingPage/images/bg-intro-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
 }
+@media (min-width: 64em) {
+  .hero__image {
+    flex: 3;
+    order: 2;
+    height: 100%;
+    min-height: 41rem;
+  }
+}
 .hero__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/../LandingPage/images/bg-intro-desktop.svg");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+@media (min-width: 64em) {
+  .hero__image::before {
+    width: 150%;
+    background-size: 150%;
+    background-position: 0% 83%;
+  }
+}
+.hero__image::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -221,8 +283,24 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
+}
 .hero__text {
   text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+    text-align: left;
+  }
 }
 .hero__text h1 {
   font-weight: 300;
@@ -230,6 +308,11 @@ button:hover, .button:hover {
   line-height: 1.15;
   color: #2d314d;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 .hero__text p {
   line-height: 1.5;
