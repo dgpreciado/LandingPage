@@ -8,7 +8,8 @@
         "animations.scss",
         "_globals.scss",
         "_header.scss",
-        "_hero.scss"
+        "_hero.scss",
+        "_feature.scss"
     ],
     "names": [],
     "file": "style.css"
