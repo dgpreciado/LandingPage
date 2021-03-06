@@ -10,11 +10,15 @@
 
   &__image {
     position: relative;
-    //background-image: url("/../LandingPage/images/bg-intro-mobile.svg"); //might need to change when deploying
+    background-image: url("/images/bg-intro-mobile.svg"); //might need to change when deploying
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 17.5rem;
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+    }
 
     @include breakpoint-up(large) {
       flex: 3;
@@ -26,18 +30,16 @@
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: url("/../LandingPage/images/bg-intro-desktop.svg");
-      background-size: 93%;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-
       @include breakpoint-up(large) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-image: url("/images/bg-intro-desktop.svg");
+        //background-size: 93%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
         width: 150%;
-        background-size: 150%;
+        background-size: 122%;
         background-position: 0% 83%;
       }
     }
@@ -47,7 +49,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: url("/../LandingPage/images/image-mockups.png");
+      background-image: url("/images/image-mockups.png");
       background-size: 93%;
       background-repeat: no-repeat;
       background-position: center bottom;
