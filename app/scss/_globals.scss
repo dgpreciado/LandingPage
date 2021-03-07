@@ -17,7 +17,8 @@ body {
   font-size: $font-med;
   color: $grayishBlue;
   font-weight: 300;
-  min-height: 200vh;
+  // min-height: 200vh;
+  overflow-x: hidden;
 
   @include breakpoint-up(large) {
     font-size: $font-med;
