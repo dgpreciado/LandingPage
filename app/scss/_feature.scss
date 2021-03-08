@@ -18,14 +18,17 @@
     @include breakpoint-up(medium) {
       display: flex;
       flex-wrap: wrap;
+      gap: 1rem;
     }
   }
 
   &__item {
-    padding: 0.9375rem;
-
+    padding: 1.875rem;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    background-color: $white;
+    margin-bottom: 1rem;
     @include breakpoint-up(medium) {
-      flex: 0 0 50%;
+      flex: 0 0 45%;
     }
 
     @include breakpoint-up(large) {

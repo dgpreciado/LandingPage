@@ -34,8 +34,8 @@
     background-position: center center;
   }
   &__text {
-    padding: 1.875rem 1.875rem 0 1.875rem;
-    color: $grayishBlue;
+    padding: 1.875rem 1.5625rem;
+    color: $darkBlue;
     @include breakpoint-up(medium) {
       padding: 1.875rem 1.5625rem;
     }

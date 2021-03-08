@@ -15,9 +15,8 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: $font-sm;
   font-weight: 300;
-  color: $grayishBlue;
+  color: $darkBlue;
   line-height: 1.3;
-  min-height: 350vh;
   overflow-x: hidden;
 
   @include breakpoint-up(large) {
@@ -26,6 +25,10 @@ body {
 
   &.noscroll {
     overflow: hidden;
+    //hides mobile menu on large
+    @include breakpoint-up(large){
+    overflow-y: visible;
+    }
   }
 }
 

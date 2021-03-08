@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 0.9375rem;
+    text-decoration: underline;
 
     @include breakpoint-up(large) {
       align-items: start;
@@ -103,7 +104,7 @@
   }
   &__copyright {
     font-size: 0.8125rem;
-    color: $grayishBlue;
+    color: $white;
 
     @include breakpoint-up(large) {
       grid-area: copyright;
